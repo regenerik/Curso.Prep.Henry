@@ -1,0 +1,62 @@
+Hoy te voy a explicar lo que significa for y algunos operadores lógicos booleanos.
+Para comenzar lo primero que deberías saber es que un valor booleano es un tipo de valor que puede ser 2 cosas:
+O verdadero, o falso.
+Para estos valores tenemos los operadores de los que hablábamos.
+|| Este primero significa "o" lo que quiere decir que entre dos tipos de datos boléanos funcionan como operadores matemáticos.
+damos la opción de que si uno de los dos datos es verdadero, el total lo sea. Por ejemplo.
+Si te digo que voy a estar feliz si traes peras o manzanas
+quiere decir que si se da la condición de que pera sea verdad o manzana lo sea, estaré feliz
+Podrian ser ambos y tambien estaria feliz, pero con cualquiera de las dos frutas seria suficiente
+en código seria algo como:
+
+si  pera es verdad   o     manzana es verdad
+
+if (pera = true     ||    manzana = true)
+    console.log('estoy feliz')
+    
+      MOSTRAR   Estoy feliz
+
+Solo en el caso que ambas frutas sean false ( que no me traigas ninguna de las dos ) no se cumple esa condición
+para poder mostrar " Estoy feliz " Si la condición no se cumple es una condición que nos da un resultado false.
+
+&& Esto significa "y", Retomando el ejemplo de las frutas esta vez solo serè feliz si/if traes peras Y manzanas
+Ya no me conformo con solo una de las dos para ser feliz.
+entonces en código seria algo como:
+
+si pera es verdad   y   manzana es verdad
+
+if (pera =true     &&   manzana  =  true )
+    console.log('estoy feliz')
+!
+    MOSTRAR     Estoy feliz
+
+Al igual que el caso anterior la única forma de que yo sea feliz es si las dos frutas son true.
+(Si me traes las dos frutas) Esa es la condición para que yo sea feliz. 
+Ya que digo Si traes pera Y manzana soy feliz
+Para el caso de que te falte una de las dos frutas, o incluso ambas, La condición será false ( no cumplida ) para que 
+yo pueda ser feliz. :(
+
+
+Por ultimo "!" este signo de admiración indica la negación de del valor booleano de algo:
+En español , cuando ponemos esto ! antes de algo verdadero se convierte en falso.
+y cuando lo ponemos antes de algo falso, se vuelve verdadero.
+Ejemplo.
+
+ 2>1 (acá dice 2 es mayor que 1)
+lo que sabemos que es verdadero
+pero si ponemos !(2>1)
+Podemos pensar en la expresión completa como falsa porque la veracidad de la misma fue invertida por el símbolo que esta afuera
+
+Casi contrario .
+decimos que  3>4  ( 3 mayor que 4) Claramente es falso /false
+pero si le mandamos por afuera de la expresión el signo de admiración ...
+
+!(3>4)
+la totalidad de la expresión es verdadera por haber invertido el valor de la misma.
+
+También se usa en ejemplos mas simples como 
+1 === 1  (1  es igual a 1)
+1 !== 2  ( 1 NO es igual a 2 )
+
+
+Alguna pregunta muchacho ? XD
