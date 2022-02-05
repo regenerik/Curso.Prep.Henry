@@ -80,11 +80,10 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var soma = 0;
-  var resultado = 0;
-  for(var i= 0; i <numeros.length-1; i++){
-    resultado = soma + (numeros[i]);
-  }return resultado;
-  
+  for(var i= 0; i <numeros.length; i++){
+    soma += numeros[i];
+  }
+  return soma;
 }
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
