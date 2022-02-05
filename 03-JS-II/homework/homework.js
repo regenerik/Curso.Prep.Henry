@@ -175,7 +175,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   let array = []
-  for (let i = 0; i < 60; i++) {
+  for (let i = 0; i < 11; i++) {
         array.push(6 * i)
   }
   return array
@@ -195,6 +195,9 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  do{
+    return (numero +(5*8));
+  }while (numero !== (numero +(5*8))  )
 }
 
 
