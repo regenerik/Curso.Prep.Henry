@@ -28,7 +28,7 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
   var matriz = []
-  for (var i = 0 ; i < array.length; i++)  //devuelve todos los indices del array
+  for (var i = 0 ; i < array.length ; i++)
       matriz.push(array[i]+1);
       return matriz;
 }
@@ -68,8 +68,14 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-var truefalse = array.includes(elemento);
-return truefalse;
+/*var truefalse = array.includes(elemento);
+return truefalse;*/
+  for(var i = 0 ; i < array.length ; i++){
+    if(array[i] == elemento){
+      return true;
+    }
+  }
+  return false;
 }
 
 
@@ -141,6 +147,7 @@ function diaDeLaSemana(numeroDeDia) {
   }else{
     return 'Es dia Laboral';
   }
+  
 } 
 
 
@@ -148,11 +155,18 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-var va = n.toString()
+/*var va = n.toString()
   if( va[0] === "9"){
     return true
   }
 return false;
+*/
+var numeroString = n.toString();
+  if(numeroString[0] === '9'){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 function todosIguales(arreglo) {
@@ -223,6 +237,7 @@ function breakStatement(numero) {
   else{
     return nuevoarray;
   }
+ 
 }
 
 function continueStatement(numero) {
@@ -232,7 +247,7 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-var arrayDevolucion = [];
+/*var arrayDevolucion = [];
 var suma = numero;
 for(var i = 0 ; i< 10 ; i++){  // te devuelve por cada vuelta un valor de 0 a 9 ( o sea 10 vueltas)
   if(i === 5)continue;       //continue dice" Evita esta vuelta de bucle y seguì..!
@@ -241,7 +256,18 @@ for(var i = 0 ; i< 10 ; i++){  // te devuelve por cada vuelta un valor de 0 a 9 
     arrayDevolucion.push(suma);
   }
 }
-return arrayDevolucion;
+return arrayDevolucion;*/
+var arrayNuevo = []
+var suma = numero;
+  for(var i = 0 ; i < 10 ; i++){
+    if(i === 5){
+      continue;
+    }else{
+      suma = suma + 2;
+      arrayNuevo.push(suma);
+    }
+  }
+  return arrayNuevo;
 }
 
 

@@ -85,11 +85,16 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero < 50 && numero > 20 ){
+  /*if (numero < 50 && numero > 20 ){
     return true;
   }else{
     return false;
   }
+  */
+  if ( 20 < numero && numero < 50){
+    return true;
+  }
+  return false;
 }
 
 function esEntero(numero) {
@@ -143,7 +148,7 @@ function operadoresLogicos(num1, num2, num3) {
   }
 }
 
-
+///                 7
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
@@ -184,20 +189,30 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero > 99 && numero < 1000 ){
-     return true;
-  }else {
-    return false
-  }
+  var numeroString = [];
+  numeroString = numero.toString() // 22  numeroString = [2, 2];
+ if(numeroString.length === 3){
+   return true;
+ }
+ return false
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  do{
+  /*do{
     return (numero +(5*8));
   }while (numero !== (numero +(5*8))  )
+  */
+  var contador = 8
+  var resultado = 0;
+  do{
+    resultado = resultado + 5
+    contador = contador - 1
+  }while(contador !== 0)
+
+  return resultado + numero;
 }
 
 
